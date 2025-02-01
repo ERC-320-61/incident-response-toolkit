@@ -2,10 +2,6 @@
 ```bash
 grep $IP $memdump.vol_results/NetScan.txt 
 ```
-# Search for the process name in NetScan.txt to see all connections associated with it
-```bash
-grep $nameEXE $memdump.vol_results/NetScan.txt 
-```
 
 # Search for the process in PsTree.txt and show 3 lines of context for better visibility
 ```bash
