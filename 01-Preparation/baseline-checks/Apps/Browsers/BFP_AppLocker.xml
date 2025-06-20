@@ -1,0 +1,19 @@
+<AppLockerPolicy Version="1">
+<RuleCollection Type="Exe" EnforcementMode="Enforced">
+
+    <!-- Block Brave Browser -->
+<FilePublisherRule Id="b1e17300-c6b6-4f0f-bd3c-a4c8c2c1f3a5" Name="Block Brave Browser (Publisher Rule)" Description="Block Brave browser based on its digital signature." UserOrGroupSid="<PLACEHOLDER FOR TEST GROUP>" Action="Deny">
+<Conditions>
+<FilePublisherCondition PublisherName="O=Brave Software Inc., L=San Francisco, S=California, C=US" ProductName="*" BinaryName="*" />
+</Conditions>
+</FilePublisherRule>
+
+    <!-- Block Opera Browser -->
+<FilePublisherRule Id="d2f13e3f-9b8f-4f31-9905-ecb0db66e7e0" Name="Block Opera Browser (Publisher Rule)" Description="Block Opera browser based on its digital signature." UserOrGroupSid="<PLACEHOLDER FOR TEST GROUP>" Action="Deny">
+<Conditions>
+<FilePublisherCondition PublisherName="O=Opera Software AS, L=Oslo, C=NO" ProductName="*" BinaryName="*" />
+</Conditions>
+</FilePublisherRule>
+
+  </RuleCollection>
+</AppLockerPolicy>
